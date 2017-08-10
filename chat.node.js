@@ -6,6 +6,8 @@ var fs = require('fs');
 var camellia = require('./lib/camellia.js');
 var K;
 
+app.set('port', (process.env.PORT || 5000)); //heroku
+
 //route all files individually
 app.get('/iso-r', function(req, res){
 	res.sendFile(__dirname + '/img/iso-r.png');
@@ -113,9 +115,9 @@ io.on('connection', function(socket){
 	});
 });
 
-//port 888
-http.listen(888, function(){
-  console.log('listening on *:888');
+//heroku port
+http.listen(app.get('port'), function(){
+  console.log('listening');
 });
 
 //utility functions
