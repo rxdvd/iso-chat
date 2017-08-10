@@ -1,2 +1,2 @@
-#iso-chat
+# iso-chat
 Simple chat written in node.js using express, fs and socket.io with user customisation. Chat messages are encrypted using a homemade JavaScript implementation of the Camellia cipher and stored in an easily parsable form within chatlog.txt. Made to practice the concept of creating a more responsive chat interface using the event-driven nature of node.js. I had previously made a chat using AJAX with PHP which pinged the server every couple of seconds to check for new messages, needless to say this one performs better.
