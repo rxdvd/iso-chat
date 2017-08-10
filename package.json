@@ -2,18 +2,21 @@
   "name": "iso-chat",
   "version": "1.0.0",
   "description": "Simple text chat",
-  "main": "chat.core.js",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "main": "chat.node.js",
   "scripts": {
+    "start": "node chat.node.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "socket.io": "2.0.3",
+    "express": "4.15.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rxdvd/iso-chat.git"
   },
-  "author": " <rxdvd0@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rxdvd/iso-chat/issues"
-  },
-  "homepage": "https://github.com/rxdvd/iso-chat#readme"
+  "license": "ISC"
 }
