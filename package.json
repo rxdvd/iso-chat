@@ -1,0 +1,19 @@
+{
+  "name": "iso-chat",
+  "version": "1.0.0",
+  "description": "Simple text chat",
+  "main": "chat.core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxdvd/iso-chat.git"
+  },
+  "author": " <rxdvd0@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rxdvd/iso-chat/issues"
+  },
+  "homepage": "https://github.com/rxdvd/iso-chat#readme"
+}
