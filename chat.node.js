@@ -45,7 +45,7 @@ app.get('/linkify-html.min.js', function(req, res){
 	res.sendFile(__dirname + '/lib/linkify-html.min.js');
 });
 
-app.get('/chat', function(req, res){
+app.get('/', function(req, res){
 	console.log(req.connection.remoteAddress);
 	res.sendFile(__dirname + '/chat.html');
 });
