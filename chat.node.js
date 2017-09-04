@@ -140,13 +140,13 @@ function validate(json_string){
 
 function encrypt(json_string){
 	var O = JSON.parse(json_string.decodeHex());
-	O.text = camellia.ctr.encrypt(O.text, '788e72745f2c87d9c55a5503a2821af6cd9eac86e40fb892ed925c019d356dea');
+	O.text = camellia.ctr.encrypt(O.text, process.env.enc_key);
 	return JSON.stringify(O).encodeHex();
 }
 
 function decrypt(json_string){
 	var O = JSON.parse(json_string.decodeHex());
-	O.text = camellia.ctr.decrypt(O.text, '788e72745f2c87d9c55a5503a2821af6cd9eac86e40fb892ed925c019d356dea');
+	O.text = camellia.ctr.decrypt(O.text, process.env.enc_key);
 	return JSON.stringify(O).encodeHex();
 }
 
